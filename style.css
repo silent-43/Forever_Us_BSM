@@ -377,86 +377,119 @@ footer .social-buttons .btn:hover {
 
 
 
-
-
-
-
-
-
-
-
-
-/* ================= Story Section ================= */
+/* ========================================================
+   STORY SECTION (story.html) UPDATES
+======================================================== */
 #story-details {
     max-width: 1000px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 2rem 1rem;
     font-family: 'Arial', sans-serif;
+    text-align: center;
 }
 
 #story-details h2 {
     font-size: 2.5rem;
-    text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 1.5rem;
 }
 
 #story-details p {
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 1.8;
-    margin-bottom: 15px;
+    margin-bottom: 1rem;
     text-align: justify;
 }
 
-/* ================= Story Cards ================= */
+/* Story Cards */
 .story-cards {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
 }
 
-.card {
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    border-radius: 10px;
-    background-color: #ffffff;
+.story-cards .card {
+    padding: 1.5rem;
+    background-color: #fff;
+    border-radius: 2rem;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.card h3 {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
-    color: #333;
+.story-cards .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
 }
 
-.card img {
+.story-cards .card h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+}
+
+.story-cards .card img {
     width: 100%;
     height: auto;
-    border-radius: 10px;
-    margin: 10px 0;
+    border-radius: 1rem;
+    margin: 0.5rem 0;
+    object-fit: cover;
 }
 
-.card a {
-    color: #0077cc;
+.story-cards .card a {
+    color: #1de16f;
     text-decoration: none;
+    font-weight: 600;
 }
 
-.card a:hover {
+.story-cards .card a:hover {
     text-decoration: underline;
 }
 
-/* ================= Responsive ================= */
+/* Responsive for story section */
 @media (max-width: 768px) {
-    .story-cards {
-        gap: 20px;
-    }
-
-    .card h3 {
-        font-size: 1.5rem;
+    #story-details h2 {
+        font-size: 2rem;
     }
 
     #story-details p {
-        font-size: 16px;
+        font-size: 1rem;
+    }
+
+    .story-cards {
+        gap: 1.5rem;
+    }
+
+    .story-cards .card h3 {
+        font-size: 1.25rem;
     }
 }
+
+@media (max-width: 480px) {
+    .story-cards {
+        gap: 1rem;
+    }
+
+    #story-details h2 {
+        font-size: 1.75rem;
+    }
+
+    #story-details p {
+        font-size: 0.95rem;
+    }
+
+    .story-cards .card h3 {
+        font-size: 1.1rem;
+    }
+}
+
+
+
+
+
+
+
+
 
 
 
