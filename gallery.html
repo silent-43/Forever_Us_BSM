@@ -22,32 +22,73 @@
 </header>
 
 <section id="gallery">
-  <h2>Gallery</h2>
-  <p>Some of our favorite memories captured in photos.</p>
+  <h2>আমাদের স্মৃতির গ্যালারি</h2>
+  <p>কিছু স্মরণীয় মুহূর্ত যা আমরা ছবি আকারে ধরে রেখেছি।</p>
 
   <div class="gallery-grid">
     <div class="card">
       <img src="./1069757b-a473-47b0-84d6-0117a07ab65d.jpeg" alt="Memory 1">
-      <p>Caption for photo 1</p>
+      <p>মুহূর্ত</p>
     </div>
     <div class="card">
       <img src="./BeautyPlus_20250626175318324_1_save.jpg" alt="Memory 2">
-      <p>Caption for photo 2</p>
+      <p>স্মৃতির পাতায় চিত্র</p>
     </div>
     <div class="card">
       <img src="./BeautyPlus_20250706172645923_1_save.jpg" alt="Memory 3">
-      <p>Caption for photo 3</p>
+      <p>একসাথে আনন্দের ছায়াপথ</p>
     </div>
     <div class="card">
       <img src="./bsmsk.jpg" alt="Memory 4">
-      <p>Caption for photo 4</p>
+      <p>স্মৃতিময় সন্ধ্যা আমাদের প্রিয় জায়গায়</p>
     </div>
-     <div class="card">
+    <div class="card">
       <img src="./IMG_20250609_163039_543.jpg" alt="Memory 5">
-      <p>Caption for photo </p>
+      <p>সপ্তাহান্তের আনন্দময় মুহূর্ত</p>
     </div>
   </div>
 </section>
+
+
+
+<!-- Share Your Story Section -->
+<section id="share-story">
+  <div class="container">
+    <h2>Share Your Love Story 💌</h2>
+    <p>আপনি আপনার গল্প, স্মৃতি বা প্রিয় মুহূর্ত আমাদের সাথে শেয়ার করতে পারেন। নিচের ফর্মটি পূরণ করুন এবং ছবি/ভিডিও আপলোড করুন।</p>
+    
+
+    <form action="#" method="post" enctype="multipart/form-data">
+      <div class="form-group">
+        <label for="name">আপনার নাম</label>
+        <input type="text" id="name" name="name" placeholder="আপনার নাম লিখুন" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">ইমেইল</label>
+        <input type="email" id="email" name="email" placeholder="আপনার ইমেইল লিখুন" required>
+      </div>
+
+      <div class="form-group">
+        <label for="story">আপনার গল্প / মুহূর্ত</label>
+        <textarea id="story" name="story" rows="5" placeholder="আপনার গল্প লিখুন..." required></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="media">ছবি বা ভিডিও আপলোড করুন</label>
+        <input type="file" id="media" name="media" accept="image/*,video/*">
+      </div>
+
+      <button type="submit">Submit 💖</button>
+    </form>
+
+
+
+
+
+
+
+
 
  <footer>
   <h2 style="color: black;">Follow Me</h2>
