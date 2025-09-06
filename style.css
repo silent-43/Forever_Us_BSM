@@ -678,9 +678,9 @@ footer .social-buttons .btn:hover {
   animation: floatShape 6s ease-in-out infinite alternate;
   box-shadow: 0 0 15px #0ff, 0 0 25px #f0f, 0 0 35px #ff0;
 }
-.shape1 { top: 20%; left: 10%; }
-.shape2 { top: 50%; left: 80%; }
-.shape3 { top: 70%; left: 30%; }
+
+.shape2 { top: 60%; left: 80%; }
+.shape3 { top: 60%; left: 30%; }
 
 @keyframes floatShape {
   0% { transform: translateY(0) rotate(0deg) scale(1); }
@@ -816,6 +816,18 @@ footer .social-buttons .btn:hover {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 /*  Category Section  */
 .hero-categories {
   flex: 1;
@@ -834,9 +846,6 @@ footer .social-buttons .btn:hover {
   text-align: center;
   text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffaa;
 }
-
-
-
 
 /* Main category list */
 .hero-categories > ul {
@@ -861,9 +870,6 @@ footer .social-buttons .btn:hover {
   box-shadow: 0 0 10px #0aff9d, 0 0 20px #0aff9d;
 }
 
-
-
-
 /* Sub-category list */
 .hero-categories li ul {
   margin-top: 6px;
@@ -871,25 +877,35 @@ footer .social-buttons .btn:hover {
   list-style: circle;
 }
 
+/* Sub-category items */
 .hero-categories li ul li {
   font-weight: normal;
   color: black;
-  padding: 4px 0;
-  transition: color 0.2s ease;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  position: relative;
 }
 
+/* Sub-category hover effect */
+.hero-categories li ul li:hover {
+  background: #0aff9d;
+  color: white;
+  box-shadow: 0 0 10px #0f0f0f, 0 0 20px #101010;
+  transform: scale(1.05);
+}
+
+/* Links inside sub-category */
 .hero-categories li ul li a {
   text-decoration: none;
   color: inherit;
+  display: block; 
 }
 
 .hero-categories li ul li a:hover {
-  color: black;
+  color: white;
   font-weight: 500;
   text-shadow: 0 0 6px black;
 }
-
-
-
 
 
